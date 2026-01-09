@@ -31,9 +31,8 @@ This is a professional portfolio website for showcasing well...myself, designed 
 ├── index.html          # Main portfolio page
 ├── styles.css          # Styling
 ├── script.js           # Interactive functionality
-├── robots.txt          # Search engine indexing rules
 ├── README.md           # This file
-└── projects/           # Project-specific content
+└── Projects/           # Project-specific content
 ```
 
 ## Deployment
