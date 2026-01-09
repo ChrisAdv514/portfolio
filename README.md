@@ -4,7 +4,7 @@ This is a professional portfolio website for showcasing well...myself, designed 
 
 ## Live
 
-[https://ChrisAdv514.github.io/website/](https://ChrisAdv514.github.io/website/)
+[https://ChrisAdv514.github.io/portfolio/](https://ChrisAdv514.github.io/portfolio/)
 
 ## Features
 
