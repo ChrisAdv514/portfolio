@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- SEO optim -->
+    <meta name="description" content="Data scientist and research assistant working on molecular property prediction with transformer models. Projects in cheminformatics, NLP, and applied ML.">
+    <link rel="canonical" href="https://chrisadv514.github.io/portfolio/">
+    <meta property="og:title" content="Chris Giannaros | Data Science & Machine Learning engineering">
+    <meta property="og:description" content="Data scientist and research assistant working on molecular property prediction with transformer models.">
+    <meta property="og:url" content="https://chrisadv514.github.io/portfolio/">
+    <meta property="og:type" content="website">
+    <!-- --- -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self';
+        style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+        font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+        img-src 'self' data:;
+        connect-src 'self';
+        object-src 'none';
+        base-uri 'none';
+        form-action 'self';
+        media-src 'self';
+        frame-ancestors 'none';
+
+    ">
+    
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#3b82f6">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h2>Chris Giannaros</h2>
+                </div>
+                <ul id="primary-nav" class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#honors">Honors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button
+                class="hamburger"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="primary-nav"
+                aria-expanded="false"
+                >
+                <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="nav-backdrop" data-nav-backdrop></div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>From Physics to Data Science</h1>
+                <p class="hero-tagline">Exploring molecules with machine learning</p>
+                <p class="hero-subtitle">I'm a data scientist and research assistant working on molecular property prediction with transformer models at the University of Crete and FORTH, with a focus on cheminformatics and drug discovery.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn secondary">
+                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    </a>
+                    <a href="https://github.com/ChrisAdv514" target="_blank" rel="noopener noreferrer" class="btn secondary">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">A bit About Me</h2> 
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a data scientist with a physics background, currently completing an MSc in Data Analysis and Machine Statistical Learning at the University of Crete and FORTH. My work focuses on applying transformer architectures and language-model style methods to problems in cheminformatics and drug discovery, especially molecular property prediction.</p>
+                
+                <p>I started in AI through physics-driven computation, first experimenting with sequence models for music generation, and then moving deeper into machine learning. Recently I've been focusing more on the chemistry and biology side, building models and pipelines to predict molecular properties and support early-stage drug discovery workflows.</p>
+                
+                <p>Beyond my academic work, I'm actively involved in the Erasmus Student Network as a Web Project Administrator, where I helped develop the award-winning <a href="https://hmucrete.esngreece.gr/">Accommodation Map</a>  recognized as the most innovative digital tool improving ESN services in Greece.</p>
+                
+                <p>I've also participated in summer schools and hackathons, including the <a href="https://www.forth.gr/onassis/index.php?show=2025-07-07">Onassis Foundation Summer School</a> and <a href="https://2023.innodays.gr/hackathon-innodays-2023/">Innodays Hackathon</a>, where I built prototypes for health and well-being challenges under tight deadlines.</p>
+
+                <a href="Projects/CV.pdf" class="btn primary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-download"></i> View My CV
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Statistics & Causality</span>
+                            </div>
+                        <div class="skill-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Deep Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Deep Generative AI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>NLP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-dna"></i>
+                            <span>Cheminformatics</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Data Visualization</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>ETL Pipelines</span>
+                        </div>
+                        </div>
+                    </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Matplotlib/Seaborn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Hugging Face</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>RDKit</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Feature Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-r-project"></i>
+                            <span>R</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-c"></i>
+                            <span>C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-microsoft"></i>
+                            <span>Productivity Suites</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Things I've Built</h2>
+            <div class="projects-grid">
+                <!-- Drug Design Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-pills project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Drug Design with Generative AI</h3>
+                        <p>Advanced research project exploring the application of generative AI models for novel drug compound discovery and molecular design.</p>
+                        <ul class="project-features">
+                            <li>Implemented state-of-the-art generative models for molecular structure generation</li>
+                            <li>Developed validation pipelines for assessing drug-likeness properties</li>
+                            <li>Created molecular similarity analysis tools for compound optimization</li>
+                            <li>On-going Research (Details available on request)</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Molecular Design</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Generation Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-music project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Music Generation with LSTM Networks</h3>
+                        <p>Deep learning project focused on generating musical sequences using Long Short-Term Memory networks trained on classical music datasets.</p>
+                        <ul class="project-features">
+                            <li>Designed LSTM architecture for temporal music pattern recognition</li>
+                            <li>Implemented MIDI processing pipelines for music data preparation</li>
+                            <li>Created evaluation metrics for assessing musical coherence and creativity</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Music Generation</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nbviewer.org/github/ChrisAdv514/website/blob/main/Projects/music_gen_lstm/music_LSTM.ipynb" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-file-code"></i> Jupyter Notebook
+                            </a>
+                            <audio controls preload="metadata">
+                                <source src="Projects/music_gen_lstm/sample.mp3" type="audio/mpeg" />
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NLP Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-comment-dots project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Advanced NLP Research</h3>
+                        <p>Comprehensive natural language processing research exploring transformer architectures and their applications in text understanding tasks.</p>
+                        <ul class="project-features">
+                            <li>Implemented transformer-based models for text classification and generation</li>
+                            <li>Developed custom attention mechanisms for improved context understanding</li>
+                            <li>Created evaluation frameworks for measuring model performance on benchmark datasets</li>
+                            <li>Passage retrieval with a cross-encoder reached 88.80% topic selection accuracy, shrinking context before QA.</li>
+                            <li>Compared extractive QA models, best factoid model achieved 65.97% F1 and 50.00% EM.</li>
+                            <li>Designed ensemble strategies like majority vote and semantic re-ranking to improve robustness, semantic reranking reached 62.67% F1.</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://nbviewer.org/github/ChrisAdv514/website/blob/main/Projects/NLP/NLP.ipynb" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-file-code"></i> Jupyter Notebook
+                            </a>
+                            <a href="Projects/NLP/NLP.pdf" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-file-pdf"></i> pdf
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- bachelor thesis -->
+            <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-graduation-cap project-icon"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Predicting Molecular IC50 for 15-LOX-1 using Machine Learning</h3>
+                        <p>Bachelor thesis research focused on developing machine learning models to predict molecular inhibition potency (IC50) for the 15-LOX-1 target, which has implications for cardiovascular and inflammation disease treatment.</p>
+                        <ul class="project-features">
+                            <li>Developed and compared multiple ML models for regression of IC50 values</li>
+                            <li>Extracted and engineered molecular descriptors and features for predictive modeling</li>
+                            <li>Achieved significant predictive performance for molecular activity estimation on a challenging dataset</li>
+                            <li>Applied validation techniques to ensure model robustness</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Cheminformatics</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://elocus.lib.uoc.gr/dlib/f/e/5/metadata-dlib-1729235437-809-20924.tkl" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-file-pdf"></i> Thesis
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>Jul 2024 - Present</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>Research Assistant</h3>
+                    <h4>Greek Speech Dataset, University of Crete & FORTH-IACM</h4>
+                    <p>Helping develop a Greek speech database, recording and processing human speech for linguistic research and AI applications, alongside the chemical projects</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>Jun 2024 - Aug 2024</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>Research Intern</h3>
+                    <h4>FORTH-IACM (Foundation for Research & Technology - Hellas)</h4>
+                    <p>Conducted research in applied computational mathematics with focus on machine learning applications.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>Feb 2024 - May 2024</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>Lab Assistant</h3>
+                    <h4>Department of Physics, University of Crete</h4>
+                    <p>Assisted in classical mechanics laboratory courses, guiding students in experiments and data analysis.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>April 2025 - Present</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>Web Project Administrator</h3>
+                    <h4>Erasmus Student Network Greece</h4>
+                    <p>Develop and maintain the Erasmus Accommodation Map, recognized as the most innovative digital tool improving ESN services in Greece.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>Oct 2025 - Mar 2026 (Exp.)</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>MSc in Data Analysis & Machine Learning</h3>
+                    <h4>University of Crete & FORTH</h4>
+                    <p>Thesis: Using AI and Transformer models for predictive physio-chemical properties of small molecules.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">
+                    <h3>Oct 2019 - Nov 2025</h3>
+                </div>
+                <div class="timeline-content">
+                    <h3>BSc in Physics</h3>
+                    <h4>University of Crete</h4>
+                    <p>Thesis: Using Machine Learning models to predict molecular IC50 for 15-LOX-1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Honors and awards -->
+    <section id="honors" class="honors">
+    <div class="container">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="honors-content">
+            <div class="award-card">
+                <div class="award-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="award-details">
+                    <h3><a href="https://www.iacm.forth.gr/media/filesupload/1b93a76ae0_APOTELESMATA_CS_STUDENT_APPLE._.pdf">Apple MSc Scholarship</a></h3>
+                    <p class="award-date">August 2025</p>
+                    <p>Awarded for research in chemical engineering using large language models to develop and predict novel drug molecules.</p>
+                </div>
+            </div>
+            <div class="award-card">
+                <div class="award-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="award-details">
+                    <h3><a href="Projects/easteregg/IT_Award_HMU.png">ESN IT Award (1st Place)</a></h3>
+                    <p class="award-date">July 2025</p>
+                    <p><a href="https://hmucrete.esngreece.gr/">Erasmus Accommodation Map</a> recognized as the most innovative digital tool improving ESN services in Greece.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in collaborating on data engineering, machine learning, or deep learning projects? Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span><a href="https://www.linkedin.com/in/chrisgiannaros111/">LinkedIn</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span><a href="https://github.com/ChrisAdv514">GitHub</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                </div>
+                <div class="footer-text">
+                    <p>Designed & Built by Myself</p>
+                    <div class="scroll-indicator">
+                        <i class="fas fa-chevron-down"></i>
+                        <span>Scroll for a surprise!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Easter Egg Sections -->
+    <div id="easter-egg-container">
+        <!-- Cat Easter Egg Section -->
+        <section id="cat-easter-egg" class="easter-egg cat-section">
+            <div class="container">
+                <div class="easter-egg-content">
+                    <h2>Psst... You Found the Cat Section! 🐱</h2>
+                    <p>Thanks for exploring all the way down here! I love cats</p>
+                    <div class="easter-egg-image">
+                        <img src="Projects/easteregg/cat.png" alt="Cute cat" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gym Easter Egg Section -->
+        <section id="gym-easter-egg" class="easter-egg gym-section">
+            <div class="container">
+                <div class="easter-egg-content">
+                    <h2>And Now for Something More Serious 💪</h2>
+                    <p>When I'm not coding or working with data, you'll find me at the gym | Lightweight - Ronnie Coleman</p>
+                    <div class="easter-egg-image">
+                        <img src="Projects/easteregg/gym.png" alt="Gym motivation" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
